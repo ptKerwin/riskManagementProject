@@ -27,6 +27,7 @@ header nav ul {
 header nav ul li {
   padding: 1rem;
   font-weight: 600;
+  transition: 0.2s ease-in;
 }
 
 header nav ul li:hover {
@@ -55,9 +56,15 @@ html {
   right: 10px;
   bottom: 10px;
   border: 2px solid black;
-  transition: 0.2s ease-out;
-  /* height: auto; */
+  transition: opacity 0.3s ease-in;
+  opacity: 0;
+  pointer-events: none; /* 隱藏時禁用點擊 */
   background-color: indianred;
+}
+
+.goTop.visible {
+  opacity: 1;
+  pointer-events: auto; /* 顯示時啟用點擊 */
 }
 
 .fa-arrow-up {

@@ -164,11 +164,11 @@
   window.onscroll = function () {
     var goTopButton = document.querySelector(".goTop");
 
-    // 如果滾動距離超過 200px，顯示按鈕，否則隱藏
+    // 如果滾動距離超過 80px，顯示按鈕，否則隱藏
     if (window.scrollY > 80) {
-      goTopButton.style.display = "block";
+      goTopButton.classList.add("visible");
     } else {
-      goTopButton.style.display = "none";
+      goTopButton.classList.remove("visible");
     }
   };
 </script>
