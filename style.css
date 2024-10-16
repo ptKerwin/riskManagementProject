@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: antiquewhite;
+  height: 60px;
+}
+
+header nav {
+  /* background-color: antiquewhite; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul li {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+header nav ul li:hover {
+  color: rgb(155, 111, 59);
+  cursor: pointer;
+}
+
+.websiteButton {
+  background-color: burlywood;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.goTop {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border: 2px solid black;
+  transition: 0.2s ease-out;
+  /* height: auto; */
+  background-color: indianred;
+}
+
+.fa-arrow-up {
+  color: black;
+  transition: 0.2s ease-out;
+}
+
+.fa-arrow-up:hover {
+  transform: translateY(4px);
+  cursor: pointer;
+}
