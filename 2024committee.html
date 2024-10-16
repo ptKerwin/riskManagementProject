@@ -151,7 +151,7 @@
         nihil dolor porro placeat vitae explicabo quam, cumque eius ea odit
         similique harum nesciunt tempora ut dolorum! Magnam.
       </div>
-      <a href="#" class="goTop">
+      <a href="javascript:void(0);" class="goTop" onclick="scrollToTop()">
         <i class="fa-solid fa-arrow-up fa-3x"></i>
       </a>
     </main>
@@ -161,19 +161,19 @@
 </html>
 
 <script>
-  //   點擊箭頭之後滑到最上面
-  //   $(".jq-goTop").click(function (e) {
-  //     e.preventDefault();
-  //     $("html,body").animate({ scrollTop: 0 }, 100000);
-  //   });
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
-  //   $(window).scroll(function () {
-  //     if ($(window).scrollTop() > 200) {
-  //       if ($(".goTop").hasClass("hide")) {
-  //         $(".goTop").toggleClass("hide");
-  //       }
-  //     } else {
-  //       $(".goTop").addClass("hide");
-  //     }
-  //   });
+  // 監聽滾動事件
+  window.onscroll = function () {
+    var goTopButton = document.querySelector(".goTop");
+
+    // 如果滾動距離超過 200px，顯示按鈕，否則隱藏
+    if (window.scrollY > 80) {
+      goTopButton.style.display = "block";
+    } else {
+      goTopButton.style.display = "none";
+    }
+  };
 </script>

@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 
+/* nav開頭 */
 header {
   background-color: antiquewhite;
   height: 60px;
+  box-shadow: 0 6px 8px -5px black;
 }
 
 header nav {
-  /* background-color: antiquewhite; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   height: 100%;
 }
@@ -37,7 +37,15 @@ header nav ul li:hover {
 .websiteButton {
   background-color: burlywood;
 }
+/* nav結束 */
 
+/* body開頭 */
+main div {
+  padding: 2rem;
+}
+/* body結束 */
+
+/* 滑到頂端按鈕設定 */
 html {
   scroll-behavior: smooth;
 }
@@ -58,6 +66,6 @@ html {
 }
 
 .fa-arrow-up:hover {
-  transform: translateY(4px);
+  transform: translateY(2.5px);
   cursor: pointer;
 }
