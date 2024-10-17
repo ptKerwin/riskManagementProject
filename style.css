@@ -74,6 +74,10 @@ main div {
   width: 100%;
 }
 
+.sec1 {
+  padding: 30px;
+}
+
 .sec1 img {
   width: 100%;
 }
@@ -104,7 +108,7 @@ html {
 .goTop {
   position: fixed;
   right: 50px;
-  bottom: 15px;
+  bottom: 30px;
   /* border: 2px solid black; */
   width: 50px;
   height: 60px;
