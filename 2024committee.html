@@ -11,19 +11,28 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navbar" class="navbar">
+        <img src="./assets/pic/public-transport.png" alt="" />
+        <h3>
+          National Chengchi<br />
+          University
+        </h3>
+        <div class="nav-divider"></div>
         <ul>
-          <li>Call for Papers</li>
-          <li>Program Committee</li>
-          <li>Paper Submission</li>
-          <li>Registration</li>
-          <li>Conference Program</li>
-          <li>Hotel and Travel</li>
+          <li><a href="#">Call for Papers</a></li>
+          <li><a href="#">Program Committee</a></li>
+          <li><a href="#">Paper Submission</a></li>
+          <li><a href="#">Registration</a></li>
+          <li><a href="#">Conference Program</a></li>
+          <li><a href="./hotel.html">Hotel and Travel</a></li>
         </ul>
-        <button class="websiteButton">123123</button>
+        <!-- <button class="websiteButton">123123</button> -->
       </nav>
     </header>
     <main>
+      <section class="sec1">
+        <img src="./assets/pic/IMG_2279.PNG" alt="" />
+      </section>
       <div>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
         nesciunt eius quia recusandae dolore nisi tempore fugit excepturi nihil
@@ -147,11 +156,20 @@
         similique harum nesciunt tempora ut dolorum! Magnam.
       </div>
       <a href="javascript:void(0);" class="goTop" onclick="scrollToTop()">
-        <i class="fa-solid fa-arrow-up fa-3x"></i>
+        <i class="fa-duotone fa-solid fa-arrow-up fa-3x"></i>
       </a>
     </main>
 
-    <footer></footer>
+    <footer>
+      <section>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sunt,
+          dicta voluptatibus consectetur et a necessitatibus blanditiis
+          doloremque ad perferendis?
+        </div>
+        <a href="https://www.asian-fa.org/">asianFA</a>
+      </section>
+    </footer>
   </body>
 </html>
 
@@ -160,8 +178,19 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function changeNavBarPosition() {
+    const navbar = document.getElementById("navbar");
+    if (window.pageYOffset > 1) {
+      navbar.style.boxShadow = "0 6px 8px -5px black";
+    } else {
+      navbar.style.boxShadow = "none";
+    }
+  }
+
   // 監聽滾動事件
   window.onscroll = function () {
+    changeNavBarPosition();
+
     var goTopButton = document.querySelector(".goTop");
 
     // 如果滾動距離超過 80px，顯示按鈕，否則隱藏
