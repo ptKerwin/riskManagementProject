@@ -19,18 +19,7 @@ header {
   left: 0;
   position: sticky;
   top: -1;
-  /* border: 2px solid black; */
 }
-
-/* header nav {
-  background-color: antiquewhite;
-  box-shadow: 0 6px 8px -5px black;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  z-index: 100;
-  padding: 20px;
-} */
 
 header nav img {
   width: 40px;
@@ -39,7 +28,6 @@ header nav img {
 
 .nav-divider {
   width: 0%;
-  /* border: 2px solid black; */
 }
 
 header nav ul {
@@ -49,11 +37,9 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border: 2px solid black; */
 }
 
 header nav ul li {
-  /* padding: 1rem; */
   font-weight: 600;
 }
 
@@ -66,10 +52,6 @@ header nav ul li a {
 header nav ul li a:hover {
   color: rgb(155, 111, 59);
   cursor: pointer;
-}
-
-.websiteButton {
-  background-color: burlywood;
 }
 
 /* 小螢幕的nav */
@@ -113,19 +95,21 @@ header nav ul li a:hover {
 input:checked ~ .menu {
   max-height: 500px;
 }
+/* 下拉選單樣式 */
 .menu {
   clear: both;
-  background: #fff;
+  background: #7e0f0f;
   display: flex;
   flex-direction: column;
   li {
     text-align: center;
-    border-bottom: 1px solid #efefef;
+    /* border-bottom: 1px solid #efefef; */
     a {
       display: block;
       padding: 10px 0;
       font-size: 18px;
-      color: black;
+      color: rgb(255, 255, 255);
+
       &:hover {
         /* background: #5d5d5d; */
         color: rgb(165, 107, 35);
@@ -224,7 +208,7 @@ html {
     float: right;
     clear: none;
     max-height: 66px;
-    background-color: antiquewhite;
+    background-color: rgb(105, 162, 236);
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -235,9 +219,8 @@ html {
       display: inline-block;
       font-weight: 600;
       a {
-        /* padding: 0 15px; */
-        text-decoration: none;
-        color: black;
+        text-decoration: none !important;
+        color: rgb(0, 0, 0);
         transition: 0.2s ease-in;
         font-size: 16px;
       }

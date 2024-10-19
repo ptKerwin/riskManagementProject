@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* body開頭 */
+main {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 40px;
+}
+
+.sec1 {
+  width: 86%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec1 img {
+  width: 100%;
+}
+
+.sec2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sec2 div {
+  margin: 20px 0;
+}
+
+.sec2 div p {
+  margin: 20px 0;
+}
+
+.sec2 div h1 {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.div6 {
+  width: 100%;
+}
+
+.downdrop {
+  border: 2px solid black;
+  width: 100%;
+  padding: 2px;
+}
+
+.droplabel {
+  border: 2px solid black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.downdrop-element {
+  border: 2px solid black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.downdrop-element label {
+  position: relative;
+  border: 2px solid black;
+  width: 100px;
+  color: black;
+  z-index: 100;
+}
