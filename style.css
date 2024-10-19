@@ -12,7 +12,7 @@ body {
 
 /* nav開頭 */
 header {
-  height: 60px;
+  height: auto;
   position: relative;
   top: 0;
   left: 0;
@@ -21,15 +21,15 @@ header {
   /* border: 2px solid black; */
 }
 
-header nav {
+/* header nav {
   background-color: antiquewhite;
-  /* box-shadow: 0 6px 8px -5px black; */
+  box-shadow: 0 6px 8px -5px black;
   display: flex;
   align-items: center;
   height: 100%;
   z-index: 100;
   padding: 20px;
-}
+} */
 
 header nav img {
   width: 40px;
@@ -69,6 +69,73 @@ header nav ul li a:hover {
 
 .websiteButton {
   background-color: burlywood;
+}
+
+/* 小螢幕的nav */
+.hambar {
+  background-color: antiquewhite;
+  height: auto;
+  /* border: 2px solid black; */
+  box-shadow: 0px 1px 3px #00000088;
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  h1 {
+    /* Logo */
+    float: left;
+    padding-left: 50px;
+    line-height: 50px;
+  }
+}
+
+.hambar label {
+  float: right;
+  padding-right: 50px;
+  line-height: 50px;
+  i {
+    width: 30px;
+    vertical-align: middle;
+  }
+  .fa-bars:hover {
+    cursor: pointer;
+  }
+}
+
+/* 隱藏用來控制hambar 開關的 checkbox */
+#switch {
+  display: none;
+}
+
+/* 選單列 */
+input:checked ~ .menu {
+  max-height: 500px;
+}
+.menu {
+  clear: both;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  li {
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    a {
+      display: block;
+      padding: 10px 0;
+      font-size: 18px;
+      color: black;
+      &:hover {
+        /* background: #5d5d5d; */
+        color: rgb(165, 107, 35);
+      }
+    }
+  }
+}
+.menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s; /* 動畫秒數 */
 }
 /* nav結束 */
 
@@ -158,4 +225,36 @@ html {
 .fa-arrow-up:hover {
   transform: translateY(2.5px);
   cursor: pointer;
+}
+
+/* 768px 以上的螢幕寬樣式 */
+@media screen and (min-width: 768px) {
+  label {
+    display: none;
+  }
+  .menu {
+    height: 80px;
+    width: 100%;
+    float: right;
+    clear: none;
+    max-height: 66px;
+    background-color: antiquewhite;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+    li {
+      display: inline-block;
+      font-weight: 600;
+      a {
+        /* padding: 0 15px; */
+        text-decoration: none;
+        color: black;
+        transition: 0.2s ease-in;
+        font-size: 16px;
+      }
+    }
+  }
 }
