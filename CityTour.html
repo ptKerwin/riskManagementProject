@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>網站名稱</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/style.css" />
 
     <link href="./assets/css/fontawesome.css" rel="stylesheet" />
     <link href="./assets/css/solid.css" rel="stylesheet" />
@@ -17,24 +17,21 @@
   </head>
   <body>
     <header>
-      <nav id="navbar" class="navbar">
-        <!-- <img src="./assets/pic/public-transport.png" alt="" />
-        <h3>
-          National Chengchi<br />
-          University
-        </h3> -->
-        <div class="nav-divider"></div>
-        <ul>
-          <li><a href="#">Call for Papers</a></li>
+      <nav id="navbar" class="hambar">
+        <label for="switch">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" id="switch" /><!--選單開關-->
+        <ul class="menu">
+          <li><a href="./CallForPaper.html">Call for Papers</a></li>
           <li><a href="./ProgramCommittee.html">Program Committee</a></li>
           <li><a href="./PaperSubmission.html">Paper Submission</a></li>
           <li><a href="./Registration.html">Registration</a></li>
           <li><a href="./ConferenceProgram.html">Conference Program</a></li>
           <li><a href="./Accommodation.html">Accommodation</a></li>
-          <li><a href="./CityTour.html">City Tour</a></li>
+          <li><a href="#">City Tour</a></li>
           <li><a href="./ConferenceSnapshots.html">Conference Snapshots</a></li>
         </ul>
-        <!-- <button class="websiteButton">123123</button> -->
       </nav>
     </header>
     <main>

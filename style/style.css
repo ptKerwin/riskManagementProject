@@ -1,3 +1,4 @@
+/* 這是header跟footer的樣式(每個頁面共用) */
 * {
   margin: 0;
   padding: 0;
@@ -138,22 +139,6 @@ input:checked ~ .menu {
   transition: 0.5s; /* 動畫秒數 */
 }
 /* nav結束 */
-
-/* body開頭 */
-main div {
-  /* padding: 2rem; */
-  width: 100%;
-}
-
-.sec1 {
-  padding: 30px;
-}
-
-.sec1 img {
-  width: 100%;
-}
-
-/* body結束 */
 
 /* footer開始 */
 footer {
