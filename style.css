@@ -43,13 +43,16 @@ header nav img {
 
 header nav ul {
   list-style-type: none;
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  /* border: 2px solid black; */
 }
 
 header nav ul li {
-  padding: 1rem;
+  /* padding: 1rem; */
   font-weight: 600;
 }
 
@@ -93,6 +96,22 @@ footer {
 footer section {
   background-color: blanchedalmond;
   height: 100%;
+  padding: 20px 50px;
+}
+
+.cantact {
+}
+
+.contact h4 {
+  font-weight: 500;
+}
+
+.copyRight {
+  margin: 10px 0;
+}
+
+.copyRight h4 {
+  font-weight: 300;
 }
 
 footer section a {
