@@ -35,7 +35,7 @@ main {
 }
 
 .sec2 div {
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 
 .sec2 div p {
@@ -60,9 +60,10 @@ main {
 
 .droplabel {
   border: 2px solid black;
-  height: 80px;
+  height: auto;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   position: relative;
   &:hover {
@@ -79,10 +80,45 @@ main {
   position: relative;
 }
 
+.fa-note-sticky {
+  color: blue;
+}
+
 .downdrop-element label {
   position: relative;
   border: 2px solid black;
   width: 100px;
   color: black;
   z-index: 100;
+}
+
+.downdrop-content {
+  width: 100%;
+  clear: both;
+  background: #fff;
+  border: 2px solid rgb(255, 67, 67);
+  /* height: 100px; */
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+}
+
+#label1 input {
+  display: none;
+}
+
+#label1 input:checked ~ #downdrop-content1 {
+  max-height: 500px;
+}
+
+.detail details {
+  border: 2px solid black;
+}
+
+.detail details summary {
+  border: 2px solid black;
+}
+
+.detail details div {
+  border: 2px solid black;
 }
