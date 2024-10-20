@@ -7,7 +7,7 @@
 
 /* body開頭 */
 main {
-  padding: 0 100px;
+  padding: 0 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +38,18 @@ main {
   /* margin: 20px 0; */
 }
 
+.div1 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.div2 {
+}
+
+.awards {
+  margin: 20px 0;
+}
+
 .sec2 div p {
   margin: 20px 0;
 }
@@ -53,16 +65,16 @@ main {
 }
 
 .downdrop {
-  border: 2px solid black;
   width: 100%;
   padding: 2px;
 }
 
 .droplabel {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: auto;
   width: 100%;
   display: flex;
+  margin: 8px 0;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -78,6 +90,7 @@ main {
   display: flex;
   align-items: center;
   position: relative;
+  padding: 20px;
 }
 
 .fa-note-sticky {
@@ -96,29 +109,17 @@ main {
   width: 100%;
   clear: both;
   background: #fff;
-  border: 2px solid rgb(255, 67, 67);
-  /* height: 100px; */
   max-height: 0;
   overflow: hidden;
-  transition: 0.6s ease-in-out;
+  transition: 0.2s ease-in;
 }
 
-#label1 input {
+input {
   display: none;
 }
 
-#label1 input:checked ~ #downdrop-content1 {
+input:checked ~ .downdrop-content {
   max-height: 500px;
-}
-
-.detail details {
-  border: 2px solid black;
-}
-
-.detail details summary {
-  border: 2px solid black;
-}
-
-.detail details div {
+  padding: 20px;
   border: 2px solid black;
 }
