@@ -103,6 +103,11 @@ main {
   color: blue;
 }
 
+.fa-circle-chevron-down {
+  position: absolute;
+  right: 20px;
+}
+
 .downdrop-element label {
   position: relative;
   border: 2px solid black;
@@ -128,4 +133,5 @@ input:checked ~ .downdrop-content {
   max-height: 500px;
   padding: 20px;
   border: 2px solid black;
+  border-top: none;
 }
