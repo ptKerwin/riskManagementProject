@@ -32,13 +32,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 2px solid black; */
+  width: 100%;
 }
 
 .sec2 div {
-  margin: 20px 0;
-}
-
-.sec2 div p {
   margin: 20px 0;
 }
 
@@ -46,4 +44,37 @@ main {
   font-weight: 400;
   font-size: 40px;
   text-align: center;
+}
+
+.div3 {
+  width: 100%;
+}
+
+.co-organizer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  /* border: 2px solid black; */
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(226, 241, 255);
+  padding-bottom: 65px;
+  border-radius: 10px 10px;
+}
+
+.member {
+  width: 30%;
+  height: auto;
+  /* border: 2px solid black; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.face {
+  border-radius: 50% 50%;
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
 }
