@@ -56,7 +56,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: rgb(221, 207, 127);
-  font-size: 16.5px;
+  /* font-size: 16.5px; */
   cursor: pointer;
 }
 
