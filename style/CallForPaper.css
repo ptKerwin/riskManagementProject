@@ -82,6 +82,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
   /* border: 2px solid black; */
 }
 
@@ -92,6 +93,7 @@ main {
 
 .div1 {
   padding: 0 220px;
+  margin: 44px 0;
   h1 {
     font-weight: 500;
     font-size: 34px;
@@ -110,10 +112,13 @@ main {
   height: auto;
   padding: 50px 200px;
   background-color: rgb(201, 226, 255);
+  margin-bottom: 44px;
+  padding-bottom: 60px;
   h1 {
     text-align: center;
     font-weight: 500;
     font-size: 34px;
+    margin-top: 10px;
     margin-bottom: 30px;
   }
 
@@ -154,6 +159,8 @@ main {
   left: 0;
   position: relative; */
   padding: 0 220px;
+  margin-bottom: 44px;
+
   h1 {
     font-weight: 500;
     font-size: 34px;
@@ -168,7 +175,30 @@ main {
 }
 
 .div4 {
-  padding: 0 220px;
+  padding: 50px 220px;
+  /* border: 2px solid black; */
+  width: 100%;
+  margin-bottom: 100px;
+
+  .awards {
+    position: relative;
+    /* border: 2px solid black; */
+    .awards-leftline {
+      position: absolute;
+      top: 48%;
+      width: 20%;
+      height: 1px;
+      border: 2px solid rgba(0, 0, 0, 0.612);
+    }
+    .awards-rightline {
+      position: absolute;
+      top: 48%;
+      left: 80%;
+      width: 20%;
+      height: 1px;
+      border: 2px solid rgba(0, 0, 0, 0.612);
+    }
+  }
   h1 {
     font-weight: 500;
     font-size: 34px;
@@ -179,6 +209,26 @@ main {
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 20px;
+  }
+  .awards-elements {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+  .awards-elements-component {
+    position: relative;
+    left: 5%;
+    width: 90%;
+    height: 50px;
+    /* border: 2px solid black; */
+    padding: 0px 18px;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 4px;
+    p {
+      line-height: 50px;
+    }
   }
 }
 /* body結束 */
