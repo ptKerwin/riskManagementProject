@@ -7,12 +7,12 @@
 
 /* body開頭 */
 main {
-  padding: 0 120px;
+  /* padding: 0 120px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  margin: 40px;
+  /* margin: 40px; */
 }
 
 .sec1 {
@@ -32,10 +32,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.sec2 div {
-  /* margin: 20px 0; */
+  width: 100%;
 }
 
 .div1 {
@@ -43,6 +40,13 @@ main {
   text-align: center;
   h4 {
     font-size: 30px;
+    &:hover {
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(22, 22, 180);
+    }
   }
 }
 
@@ -67,12 +71,13 @@ main {
 }
 
 .div6 {
-  width: 100%;
+  width: 90%;
 }
 
 .downdrop {
   width: 100%;
   padding: 2px;
+  border: 2px solid black;
 }
 
 .droplabel {
@@ -91,7 +96,8 @@ main {
 
 .downdrop-element {
   border: 2px solid black;
-  height: 80px;
+  border-radius: 4px;
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -123,6 +129,11 @@ main {
   max-height: 0;
   overflow: hidden;
   transition: 0.2s ease-in;
+  table {
+    width: 96%;
+    border: 2px solid black;
+    margin: 10px 2%;
+  }
 }
 
 input {
@@ -131,7 +142,7 @@ input {
 
 input:checked ~ .downdrop-content {
   max-height: 500px;
-  padding: 20px;
+  /* padding: 20px; */
   border: 2px solid black;
   border-top: none;
 }
