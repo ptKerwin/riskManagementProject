@@ -95,6 +95,9 @@ main {
     a {
       text-decoration: none;
       color: rgb(216, 48, 36);
+      &:hover {
+        color: rgb(189, 37, 26);
+      }
     }
   }
   p {
@@ -111,6 +114,7 @@ main {
     margin: 0 18%;
     width: auto;
     /* border: 2px solid black; */
+    background-color: rgb(255, 251, 244);
     .receive-area {
       width: 100%;
       height: auto;
@@ -140,6 +144,22 @@ main {
       }
       .receivers {
         width: 80%;
+        position: relative;
+        color: rgb(0, 30, 54);
+        .first-receiver {
+          position: relative;
+          top: -10px;
+          left: -22px;
+        }
+        .second-receiver {
+          position: relative;
+          left: -22px;
+        }
+        .third-receiver {
+          position: relative;
+          top: 8px;
+          left: -22px;
+        }
       }
     }
   }
@@ -233,7 +253,7 @@ main {
   background: #fff;
   max-height: 0;
   overflow: hidden;
-  transition: 0.2s ease-in;
+  transition: 0.3s ease-in;
   background-color: rgb(255, 249, 241);
   table {
     width: 96%;
@@ -258,6 +278,7 @@ input {
 input:checked ~ .downdrop-content {
   max-height: 500px;
   /* padding: 20px; */
+  transition-duration: 0.8s;
   border: 1.5px solid rgb(56, 114, 158);
   border-top: none;
 }
