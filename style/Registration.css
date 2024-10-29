@@ -83,6 +83,7 @@ main {
   width: 100%;
   .div1 {
     width: 100%;
+    margin-bottom: 20px;
     .div1-block {
       width: auto;
       margin: 0 16%;
@@ -92,8 +93,9 @@ main {
       h1 {
         /* border: 2px solid black; */
         font-weight: 400;
-        font-size: 40px;
+        font-size: 36px;
         text-align: center;
+        margin-bottom: 20px;
       }
       .registration-period-explanation {
         /* border: 2px solid black; */
@@ -110,6 +112,10 @@ main {
   margin-top: 40px;
   width: 100%;
   .div2-block {
+    h1 {
+      font-size: 36px;
+      font-weight: 400;
+    }
     /* width: 100%; */
     margin: 0 16%;
     display: flex;
