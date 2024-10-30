@@ -83,10 +83,6 @@ main {
   width: 100%;
 }
 
-.sec2 div {
-  margin: 20px 0;
-}
-
 .sec2 div h1 {
   font-weight: 400;
   font-size: 40px;
@@ -124,4 +120,160 @@ main {
   height: 200px;
   width: 200px;
   border: 2px solid black;
+}
+
+.div4 {
+  .speakers {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+    .speakers-profile {
+      /* border: 2px solid black; */
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(233, 243, 255);
+      box-shadow: 3px 2px 4px 2.5px rgba(164, 206, 255, 0.4);
+      border-radius: 12px;
+      padding: 40px;
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
+      }
+
+      .speakers-profile-number {
+        /* border: 2px solid rgb(110, 192, 231); */
+        background-color: rgb(162, 206, 240);
+        border-radius: 50% 50%;
+
+        /* text-decoration: underline rgb(59, 110, 177); */
+        text-underline-offset: 6px;
+        color: rgb(231, 247, 255);
+        height: 52px;
+        width: 52px;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+      }
+
+      h3 {
+        font-size: 38px;
+        font-weight: 400;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.div5 {
+  width: 100%;
+  background-color: rgb(255, 253, 243);
+  /* border: 2px solid black; */
+  .speakers {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+    width: 100%;
+
+    .speakers-profile {
+      /* border: 2px solid black; */
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(232, 242, 254);
+      box-shadow: 3px 2px 4px 2.5px rgba(164, 206, 255, 0.637);
+      border-radius: 12px;
+      padding: 40px;
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
+      }
+
+      .speakers-profile-number {
+        /* border: 2px solid rgb(110, 192, 231); */
+        background-color: rgb(162, 206, 240);
+        border-radius: 50% 50%;
+
+        /* text-decoration: underline rgb(59, 110, 177); */
+        text-underline-offset: 6px;
+        color: rgb(231, 247, 255);
+        height: 52px;
+        width: 52px;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+      }
+
+      h3 {
+        font-size: 38px;
+        font-weight: 400;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.div6 {
+  width: 100%;
+
+  .speakers {
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+    width: 100%;
+
+    .speakers-profile {
+      /* border: 2px solid black; */
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(201, 226, 255);
+      box-shadow: 3px 2px 4px 2.5px rgba(164, 206, 255, 0.637);
+      border-radius: 12px;
+      padding: 40px;
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
+      }
+
+      .speakers-profile-number {
+        /* border: 2px solid rgb(110, 192, 231); */
+        background-color: rgb(162, 206, 240);
+        border-radius: 50% 50%;
+
+        /* text-decoration: underline rgb(59, 110, 177); */
+        text-underline-offset: 6px;
+        color: rgb(231, 247, 255);
+        height: 52px;
+        width: 52px;
+        margin-bottom: 10px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+      }
+
+      h3 {
+        font-size: 38px;
+        font-weight: 400;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
 }

@@ -96,7 +96,7 @@ main {
       text-decoration: none;
       color: rgb(216, 48, 36);
       &:hover {
-        color: rgb(189, 37, 26);
+        color: rgb(109, 7, 0);
       }
     }
   }
@@ -172,25 +172,23 @@ main {
 .div3 {
   width: 100%;
   height: auto;
-  margin: 20px 0;
+  margin: 40px 0;
   .execellent-paper {
     margin: 0 20%;
-    /* border: 2px solid black; */
   }
 }
 
 .div6 {
   width: 90%;
+  margin-bottom: 20px;
 }
 
 .downdrop {
   width: 100%;
   padding: 2px;
-  /* border: 2px solid black; */
 }
 
 .droplabel {
-  /* border: 2px solid black; */
   height: auto;
   width: 100%;
   display: flex;
@@ -230,7 +228,7 @@ main {
 .display {
   position: absolute;
   right: 56px;
-  top: 0px;
+  top: 2px;
 }
 
 .fa-circle-chevron-down {
