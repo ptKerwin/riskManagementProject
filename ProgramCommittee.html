@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -25,7 +29,7 @@
         <input type="checkbox" id="switch" /><!--選單開關-->
         <ul class="menu">
           <li><a href="./CallForPaper.html">Call for Papers</a></li>
-          <li><a href="#">Program Committee</a></li>
+          <li><a href="#" class="page-is-here">Program Committee</a></li>
           <li><a href="./PaperSubmission.html">Paper Submission</a></li>
           <li><a href="./Registration.html">Registration</a></li>
           <li><a href="./ConferenceProgram.html">Conference Program</a></li>
@@ -47,25 +51,59 @@
       </section>
       <section class="sec2">
         <div class="div1">
-          <h1>Host</h1>
-          <p>Asian Finance Association</p>
-          <p>The College of Commerce at National Chengchi University</p>
+          <div class="div1-block">
+            <h1>Host</h1>
+            <div class="div1-members">
+              <div class="div1-divider"></div>
+              <p onclick="window.open('https://www.asian-fa.org/')">
+                Asian Finance Association
+              </p>
+              <div class="div1-divider"></div>
+              <p
+                onclick="window.open('https://commerce.nccu.edu.tw/?locale=en')"
+              >
+                The College of Commerce at National Chengchi University
+              </p>
+              <div class="div1-divider"></div>
+            </div>
+          </div>
         </div>
         <div class="div2">
-          <h1>Organizer</h1>
-          <p>
-            Department of Finance, the College of Commerce at National Chengchi
-            University
-          </p>
+          <div class="div2-block">
+            <h1>Organizer</h1>
+            <div class="div2-members">
+              <div class="div1-divider"></div>
+
+              <p
+                onclick="window.open('https://finance.nccu.edu.tw/?locale=en')"
+              >
+                Department of Finance, the College of Commerce at National
+                Chengchi University
+              </p>
+              <div class="div1-divider"></div>
+            </div>
+          </div>
         </div>
+
         <div class="div3">
-          <h1>Co-organizer</h1>
-          <p>Taiwan Finance Association</p>
-          <p>
-            The College of Global Banking and Finance at National Changchi
-            University
-          </p>
-          <!-- <div class="co-organizer">
+          <div class="div3-block">
+            <h1>Co-organizer</h1>
+            <div class="div3-members">
+              <div class="div1-divider"></div>
+              <p onclick="window.open('https://www.finance.org.tw/fnhome')">
+                Taiwan Finance Association
+              </p>
+              <div class="div1-divider"></div>
+              <p
+                onclick="window.open('https://cgbf.nccu.edu.tw/eng/PageFront')"
+              >
+                The College of Global Banking and Finance at National Changchi
+                University
+              </p>
+              <div class="div1-divider"></div>
+            </div>
+
+            <!-- <div class="co-organizer">
             <div class="member">
               <div class="face"></div>
               <h3>Tao CHEN</h3>
@@ -82,32 +120,57 @@
               <h4>Asian Finance Association</h4>
             </div>
           </div> -->
+          </div>
         </div>
+
         <div class="div4">
-          <h1>Program committee</h1>
-          <div class="speakers">
-            <div class="speakers-profile">
-              <div class="speakers-profile-number">1</div>
-              <h3>Jia-Chi Huang</h3>
-              <p>
-                Dean of the College of Commerce at Nnational Chengchi University
-              </p>
-            </div>
-            <div class="speakers-profile">
-              <div class="speakers-profile-number">2</div>
-              <h3>Yenn-Ru Chen</h3>
-              <p>
-                President of Asian Finance Association, Professor of Finance at
-                National Chengchi University
-              </p>
-            </div>
-            <div class="speakers-profile">
-              <div class="speakers-profile-number">3</div>
-              <h3>Tao Chen</h3>
-              <p>
-                Vice Preseident of Asian Finance Association, Associate
-                Professor in Finance at Nanyang Technological University
-              </p>
+          <div class="div4-block">
+            <h1>Program committee</h1>
+            <div class="speakers">
+              <div
+                class="speakers-profile"
+                onclick="window.open('https://ba.nccu.edu.tw/en/faculty/JIA-CHI-HUANG-73705562')"
+              >
+                <div class="speakers-profile-name">
+                  <div class="speakers-profile-number">1</div>
+                  <h3>Jia-Chi Huang</h3>
+                </div>
+                <li class="introduction">
+                  Dean of the College of Commerce at National Chengchi
+                  University
+                </li>
+              </div>
+              <div
+                class="speakers-profile"
+                onclick="window.open('https://commerce.nccu.edu.tw/en/faculty/faculty_directory_bydept/YENN-RU-CHEN-65151113')"
+              >
+                <div class="speakers-profile-name">
+                  <div class="speakers-profile-number">2</div>
+                  <h3>Yenn-Ru Chen</h3>
+                </div>
+
+                <div class="introduction">
+                  <li>President of Asian Finance Association</li>
+                  <li>Professor of Finance at National Chengchi University</li>
+                </div>
+              </div>
+              <div
+                class="speakers-profile"
+                onclick="window.open('https://dr.ntu.edu.sg/cris/rp/rp00935')"
+              >
+                <div class="speakers-profile-name">
+                  <div class="speakers-profile-number">3</div>
+                  <h3>Tao Chen</h3>
+                </div>
+
+                <div class="introduction">
+                  <li>Vice President of Asian Finance Association</li>
+                  <li>
+                    Associate Professor in Finance at Nanyang Technological
+                    University
+                  </li>
+                </div>
+              </div>
             </div>
           </div>
           <!-- <p>
@@ -126,16 +189,19 @@
         <div class="div5">
           <h1>Organizing committee</h1>
           <div class="speakers">
-            <div class="speakers-profile">
-              <div class="speakers-profile-number">1</div>
+            <div
+              class="speakers-profile"
+              onclick="window.open('https://finance.nccu.edu.tw/en/Members/members_1/HONG-YI-CHEN-11777353')"
+            >
+              <!-- <div class="speakers-profile-number">1</div> -->
               <h3>Hong-Yi Chen</h3>
               <p>
                 Chair of the program committee, Professor and Chair of the
                 department of Finance at National Chengchi University
               </p>
             </div>
-            <div class="speakers-profile">
-              <div class="speakers-profile-number">2</div>
+            <div class="speakers-profile" onclick="window.open('')">
+              <!-- <div class="speakers-profile-number">2</div> -->
               <h3>Shu-feng Wang</h3>
               <p>
                 Co-chair of the program committee, Secretary of Asian Finance
@@ -155,29 +221,40 @@
         <div class="div6">
           <h1>Advisory committee</h1>
           <div class="speakers">
-            <div class="speakers-profile">
+            <div
+              class="speakers-profile"
+              onclick="window.open('https://commerce.nccu.edu.tw/en/faculty/faculty_directory_bydept/ROBIN-K-CHOU-968875')"
+            >
               <div class="speakers-profile-number">1</div>
               <h3>Robin K. Chou</h3>
               <p>Professor of Finance at National Chengchi University</p>
             </div>
-            <div class="speakers-profile">
+            <div
+              class="speakers-profile"
+              onclick="window.open('https://management.ntu.edu.tw/en/Fin/faculty/teacher/sn/245')"
+            >
               <div class="speakers-profile-number">2</div>
               <h3>Chuan-Yang Hwang</h3>
               <p>Professor of Finance at National Taiwan University</p>
             </div>
-          </div>
-          <div class="speakers">
-            <div class="speakers-profile">
+            <div
+              class="speakers-profile"
+              onclick="window.open('https://fm.mgt.ncu.edu.tw/en/faculty-member/89/profile')"
+            >
               <div class="speakers-profile-number">3</div>
               <h3>Ji-Chai Lin</h3>
               <p>Professor of Finance at National Central University</p>
             </div>
-            <div class="speakers-profile">
+            <div
+              class="speakers-profile"
+              onclick="window.open('https://management.ntu.edu.tw/en/Fin/faculty/teacher/sn/55')"
+            >
               <div class="speakers-profile-number">4</div>
               <h3>Sheng-Syan Chen</h3>
               <p>Professor of Finance at National Taiwan University</p>
             </div>
           </div>
+
           <!-- <p>
             Robin K. Chou, Professor of Finance at National Chengchi University
           </p>

@@ -60,6 +60,10 @@ header nav ul li a:hover {
   cursor: pointer;
 }
 
+.page-is-here {
+  color: rgb(235, 178, 66) !important;
+}
+
 /* 小螢幕的nav */
 .hambar {
   background-color: antiquewhite;
