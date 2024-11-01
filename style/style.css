@@ -31,11 +31,8 @@ header nav img {
   transition: 0.1s ease-in-out;
 }
 
-.nav-divider {
-  width: 0%;
-}
-
 header nav ul {
+  /* border: 2px solid black; */
   list-style-type: none;
   height: 100%;
   width: 100%;
@@ -46,6 +43,9 @@ header nav ul {
 
 header nav ul li {
   font-weight: 600;
+  margin-left: 14px;
+  /* border: 2px solid black; */
+  /* height: 80%; */
 }
 
 header nav ul li a {
@@ -58,6 +58,28 @@ header nav ul li a:hover {
   color: rgb(221, 207, 127);
   /* font-size: 16.5px; */
   cursor: pointer;
+}
+
+header nav ul li:hover .others-dropdown {
+  display: flex;
+}
+
+.others-dropdown li {
+  display: block;
+  margin: 2px 0;
+}
+
+.others-dropdown {
+  width: auto;
+  height: auto;
+  background: rgb(1, 79, 138);
+  /* border: 2px solid black; */
+  right: 0px;
+  top: 70px;
+  position: absolute;
+  z-index: 980;
+  display: none;
+  flex-direction: column;
 }
 
 .page-is-here {
@@ -111,6 +133,7 @@ input:checked ~ .menu {
   background: #7e0f0f;
   display: flex;
   flex-direction: column;
+  /* border: 2px solid black; */
   li {
     text-align: center;
     /* border-bottom: 1px solid #efefef; */
@@ -136,6 +159,27 @@ input:checked ~ .menu {
   overflow: hidden;
   transition: 0.5s; /* 動畫秒數 */
 }
+
+.icon {
+  display: flex;
+  align-items: center;
+  width: 24%;
+  /* border: 2px solid black; */
+  img {
+    position: relative;
+    width: 240px;
+    z-index: 500;
+    /* border: 2px solid black; */
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h5 {
+    color: black;
+    font-size: 16px;
+  }
+}
+
 /* nav結束 */
 
 /* footer開始 */
@@ -221,7 +265,7 @@ html {
     width: 100%;
     float: right;
     clear: none;
-    max-height: 66px;
+    max-height: 74px;
     background-color: rgb(1, 79, 138);
     /* rgb(105, 162, 236); */
     list-style-type: none;
