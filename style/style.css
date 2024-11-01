@@ -52,11 +52,12 @@ header nav ul li a {
   text-decoration: none;
   color: black;
   transition: 0.2s ease-in;
+  padding: 22px 0;
+  /* border: 2px solid black; */
 }
 
 header nav ul li a:hover {
-  color: rgb(221, 207, 127);
-  /* font-size: 16.5px; */
+  color: rgb(235, 178, 66);
   cursor: pointer;
 }
 
@@ -65,17 +66,32 @@ header nav ul li:hover .others-dropdown {
 }
 
 .others-dropdown li {
+  /* border: 2px solid black; */
+  height: auto;
   display: block;
-  margin: 2px 0;
+  margin: 2px 10px;
+  color: black;
+  width: 100%;
+  transition: 0.2s ease-in;
+  &:hover {
+    background-color: rgb(235, 178, 66);
+  }
+}
+
+.others-dropdown li a {
+  color: black !important;
+  padding: 10px 10px;
+  /* background-color: aqua; */
+  /* border: 2px solid black; */
 }
 
 .others-dropdown {
   width: auto;
   height: auto;
-  background: rgb(1, 79, 138);
+  background-color: rgb(255, 255, 255);
   /* border: 2px solid black; */
-  right: 0px;
-  top: 70px;
+  right: 4px;
+  top: 74px;
   position: absolute;
   z-index: 980;
   display: none;
@@ -143,10 +159,9 @@ input:checked ~ .menu {
     }
     a {
       display: block;
-      padding: 10px 0;
       font-size: 18px;
       color: rgb(255, 255, 255);
-
+      /* border: 2px solid black; */
       &:hover {
         /* color: rgb(105, 98, 235); */
         /* font-size: 19px; */

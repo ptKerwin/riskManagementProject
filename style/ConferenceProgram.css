@@ -217,6 +217,10 @@ main {
 }
 
 .fa-note-sticky {
+  /* color: rgb(248, 218, 129); */
+}
+
+.fa-calendar-days {
   color: rgb(248, 218, 129);
 }
 
