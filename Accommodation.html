@@ -24,14 +24,33 @@
         </label>
         <input type="checkbox" id="switch" /><!--選單開關-->
         <ul class="menu">
+          <div class="icon">
+            <img
+              src="./assets/pic/finance.png"
+              alt=""
+              onclick="window.open('https://finance.nccu.edu.tw/?locale=enhttps://finance.nccu.edu.tw/?locale=en')"
+            />
+          </div>
           <li><a href="./CallForPaper.html">Call for Papers</a></li>
           <li><a href="./ProgramCommittee.html">Program Committee</a></li>
           <li><a href="./PaperSubmission.html">Paper Submission</a></li>
           <li><a href="./Registration.html">Registration</a></li>
           <li><a href="./ConferenceProgram.html">Conference Program</a></li>
-          <li><a href="#" class="page-is-here">Accommodation</a></li>
-          <li><a href="./CityTour.html">City Tour</a></li>
-          <li><a href="./ConferenceSnapshots.html">Conference Snapshots</a></li>
+          <li class="others-li">
+            <a href="#">Others</a>
+            <!-- &#x25BE -->
+            <ul class="others-dropdown">
+              <li>
+                <a href="./Accommodation.html" class="page-is-here"
+                  >Accommodation</a
+                >
+              </li>
+              <li><a href="./CityTour.html">City Tour</a></li>
+              <li>
+                <a href="./ConferenceSnapshots.html">Conference Snapshots</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
