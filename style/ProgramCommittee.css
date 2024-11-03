@@ -91,32 +91,43 @@ main {
 
 .div1 {
   width: 100%;
-  margin: 40px 0;
+  margin-top: 44px;
   display: flex;
   flex-direction: column;
   align-items: center;
   .div1-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 70%;
+    /* align-items: center; */
+    width: 68%;
     h1 {
+      margin-bottom: 24px;
+      color: rgb(87, 87, 87);
+      /* border: 2px solid lightskyblue; */
     }
     .div1-members {
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: last baseline;
-
-      p {
-        font-size: 24px;
-        margin: 10px 0;
+      align-items: first baseline;
+      /* border: 2px solid black; */
+      margin-top: -20px;
+      li {
+        font-size: 20px;
+        /* margin: 10px 0; */
         cursor: pointer;
+        /* margin-left: 50px; */
+        /* padding: 10px 20px; */
+        padding-left: 20px;
+
+        margin-top: 20px;
+        color: rgb(61, 61, 61);
+        /* border: 2px solid lightskyblue; */
       }
       .div1-divider {
-        width: 100%;
+        width: 40%;
         height: 1px;
-        background-color: rgba(133, 133, 133, 0.564);
+        background-color: rgba(133, 133, 133, 0.7);
       }
     }
   }
@@ -124,33 +135,40 @@ main {
 
 .div2 {
   width: 100%;
-  margin: 40px 0;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   .div2-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: last baseline;
     /* border: 2px solid black; */
-    width: 70%;
+    width: 68%;
     h1 {
+      color: rgb(87, 87, 87);
+      margin-bottom: 10px;
     }
     .div2-members {
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: last baseline;
+      /* align-items: center; */
 
-      p {
-        font-size: 24px;
-        margin: 10px 0;
+      li {
+        font-size: 20px;
+        /* margin-left: 50px; */
+        padding-left: 20px;
+
+        margin-top: 26px;
         cursor: pointer;
+        /* padding-left: 20px; */
+        color: rgb(61, 61, 61);
       }
-      .div1-divider {
-        width: 100%;
-        height: 1px;
-        background-color: rgba(133, 133, 133, 0.564);
+      .div2-divider {
+        width: 40%;
+        height: 1.5px;
+        background-color: rgba(133, 133, 133, 0.7);
       }
     }
   }
@@ -158,32 +176,41 @@ main {
 
 .div3 {
   width: 100%;
-  margin: 40px 0;
+  margin-top: 70px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   .div3-block {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 70%;
+    /* align-items: center; */
+    /* border: 2px solid black; */
+    width: 68%;
     h1 {
+      color: rgb(87, 87, 87);
+      margin-bottom: 10px;
     }
     .div3-members {
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: last baseline;
+      align-items: first baseline;
+      /* border: 2px solid black; */
+      /* margin-top: 0px; */
 
-      p {
-        font-size: 24px;
-        margin: 10px 0;
+      li {
+        font-size: 20px;
+        margin-top: 20px;
+        /* margin-left: 50px; */
         cursor: pointer;
+        padding-left: 20px;
+        color: rgb(61, 61, 61);
       }
-      .div1-divider {
-        width: 100%;
+      .div3-divider {
+        width: 40%;
         height: 1px;
-        background-color: rgba(133, 133, 133, 0.564);
+        background-color: rgba(133, 133, 133, 0.7);
       }
     }
   }
@@ -226,14 +253,15 @@ main {
   align-items: center;
   background-color: rgb(233, 243, 255);
   .div4-block {
-    width: 60%;
-
+    width: 66%;
+    margin-bottom: 70px;
     h1 {
       margin-top: 60px;
       text-align: center;
-      font-size: 40px;
-      font-weight: 500;
+      font-size: 34px;
+      /* font-weight: 500; */
       margin-bottom: 20px;
+      color: rgb(70, 70, 70);
     }
     .speakers {
       display: flex;
@@ -249,9 +277,9 @@ main {
         /* align-items: center; */
         position: relative;
         background-color: rgb(255, 255, 255);
-        box-shadow: 3px 2px 4px 2.5px rgba(164, 206, 255, 0.637);
-        border-radius: 12px;
-        padding: 30px 20px;
+        box-shadow: 3px 2px 4px 1px rgba(72, 102, 137, 0.3);
+        border-radius: 2px;
+        padding: 30px 30px;
         transition: 0.3s;
         cursor: pointer;
         margin: 8px 0;
@@ -265,18 +293,22 @@ main {
           /* border: 2px solid black; */
           display: flex;
           align-items: center;
+          h3 {
+            color: rgb(63, 63, 63);
+          }
         }
         .speakers-profile-number {
           /* border: 2px solid rgb(110, 192, 231); */
           position: relative;
-          background-color: rgb(168, 200, 225);
+          background-color: rgb(190, 208, 222);
           border-radius: 50% 50%;
-          color: rgb(231, 247, 255);
+          color: rgb(255, 255, 255);
           height: 24px;
           width: 24px;
           margin-right: 10px;
           text-align: center;
           /* line-height: 50px; */
+          font-weight: 500;
           font-size: 18px;
         }
 
@@ -285,6 +317,7 @@ main {
           /* width: 20%; */
           position: relative;
           left: 0;
+          margin-left: 2px;
           font-size: 24px;
           font-weight: 500;
           /* margin-right: 20px; */
@@ -292,6 +325,10 @@ main {
         .introduction {
           margin-top: 12px;
           margin-left: 40px;
+          color: rgb(85, 85, 85);
+        }
+        li {
+          margin-top: 6px;
         }
         p {
           font-size: 18px;
@@ -306,52 +343,73 @@ main {
   width: 100%;
   /* background-color: rgb(255, 253, 243); */
   /* border: 2px solid black; */
+  h1 {
+    text-align: center;
+    color: rgb(70, 70, 70);
+    font-size: 34px;
+  }
   .speakers {
     display: flex;
-    justify-content: space-around;
-    /* border: 2px solid black; */
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
     margin-bottom: 20px;
     width: 100%;
 
     .speakers-profile {
       /* border: 2px solid black; */
-      width: 30%;
+      width: 66%;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      background-color: rgb(232, 242, 254);
-      box-shadow: 3px 2px 4px 2.5px rgba(164, 206, 255, 0.637);
-      border-radius: 12px;
-      padding: 40px;
+      /* align-items: center; */
+      background-color: rgb(252, 253, 255);
+      box-shadow: 3px 2px 4px 2.5px rgba(192, 192, 192, 0.637);
+      border-radius: 2px;
+      padding: 30px 30px;
       transition: 0.3s;
       cursor: pointer;
+      margin: 20px 0;
       &:hover {
         box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
       }
+      .speakers-profile-name {
+        position: relative;
+        width: 100%;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        .speakers-profile-number {
+          /* border: 2px solid rgb(110, 192, 231); */
+          background-color: rgb(190, 208, 222);
+          border-radius: 50% 50%;
 
-      .speakers-profile-number {
-        /* border: 2px solid rgb(110, 192, 231); */
-        background-color: rgb(162, 206, 240);
-        border-radius: 50% 50%;
+          /* text-decoration: underline rgb(59, 110, 177); */
+          text-underline-offset: 6px;
+          color: rgb(255, 255, 255);
+          height: 24px;
+          width: 24px;
+          margin-bottom: 10px;
+          text-align: center;
+          line-height: 24px;
+          font-size: 18px;
+          font-weight: 500;
+          margin-right: 10px;
+        }
 
-        /* text-decoration: underline rgb(59, 110, 177); */
-        text-underline-offset: 6px;
-        color: rgb(231, 247, 255);
-        height: 52px;
-        width: 52px;
-        margin-bottom: 10px;
-        text-align: center;
-        line-height: 50px;
-        font-size: 30px;
+        h3 {
+          font-size: 26px;
+          font-weight: 500;
+          margin-bottom: 12px;
+          color: rgb(63, 63, 63);
+        }
       }
-
-      h3 {
-        font-size: 38px;
-        font-weight: 400;
-        margin-bottom: 12px;
-      }
-      p {
-        font-size: 16px;
+      .introduction {
+        margin-left: 40px;
+        li {
+          font-size: 16px;
+          color: rgb(85, 85, 85);
+          margin-top: 6px;
+        }
       }
     }
   }
@@ -359,7 +417,13 @@ main {
 
 .div6 {
   width: 100%;
-
+  /* border: 2px solid black; */
+  margin: 60px 0;
+  h1 {
+    text-align: center;
+    color: rgb(70, 70, 70);
+    font-size: 34px;
+  }
   .speakers {
     display: flex;
     flex-direction: column;
@@ -375,10 +439,10 @@ main {
       display: flex;
       /* flex-direction: column; */
       align-items: center;
-      background-color: rgb(233, 243, 255);
-      box-shadow: 3px 2px 4px 2.5px rgba(164, 206, 255, 0.637);
-      border-radius: 12px;
-      padding: 20px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 3px 2px 4px 2.5px rgba(192, 192, 192, 0.637);
+      border-radius: 2px;
+      padding: 28px;
       margin: 10px 0;
       transition: 0.3s;
       cursor: pointer;
@@ -388,18 +452,19 @@ main {
 
       .speakers-profile-number {
         /* border: 2px solid rgb(110, 192, 231); */
-        background-color: rgb(162, 206, 240);
+        background-color: rgb(190, 208, 222);
         border-radius: 50% 50%;
 
         /* text-decoration: underline rgb(59, 110, 177); */
         text-underline-offset: 6px;
-        color: rgb(231, 247, 255);
-        height: 20px;
-        width: 20px;
+        color: rgb(255, 255, 255);
+        height: 24px;
+        width: 24px;
         margin-right: 10px;
         text-align: center;
         /* line-height: 50px; */
-        font-size: 14px;
+        font-size: 16px;
+        font-weight: 500;
       }
 
       h3 {
