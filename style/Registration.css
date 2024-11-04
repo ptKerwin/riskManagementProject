@@ -109,7 +109,7 @@ main {
 }
 
 .sec2 .div2 {
-  margin-top: 40px;
+  /* margin-top: 40px; */
   width: 100%;
   .div2-block {
     h1 {
@@ -141,7 +141,7 @@ main {
       }
       td {
         /* border: 1px solid black; */
-        padding: 10px 90px;
+        padding: 10px 80px;
       }
     }
   }
