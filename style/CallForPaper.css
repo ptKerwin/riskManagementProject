@@ -109,10 +109,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(233, 243, 255);
+  background-color: rgba(151, 172, 198, 0.4);
   .div2-block {
-    width: 60%;
+    width: 80%;
     margin-bottom: 70px;
+    /* border: 2px solid black; */
+
     h1 {
       margin-top: 60px;
       text-align: center;
@@ -124,15 +126,16 @@ main {
     .speakers {
       display: flex;
       justify-content: space-around;
-      flex-direction: column;
+      /* flex-direction: column; */
       margin-bottom: 20px;
       width: 100%;
       .speakers-profile {
         /* border: 2px solid black; */
-        width: 100%;
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
+        width: 44%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
         position: relative;
         background-color: rgb(255, 255, 255);
         box-shadow: 3px 2px 4px 1px rgba(72, 102, 137, 0.3);
@@ -150,9 +153,45 @@ main {
           width: 100%;
           /* border: 2px solid black; */
           display: flex;
+          flex-direction: column;
           align-items: center;
           h3 {
             color: rgb(63, 63, 63);
+          }
+        }
+        .speakers-profile-pic-clemens {
+          min-width: 150px;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          overflow: hidden;
+          /* border: 2px solid black; */
+          /* display: flex; */
+          /* align-items: center; */
+          img {
+            object-fit: cover;
+            height: 110%;
+            width: 110%;
+            aspect-ratio: 1 / 1;
+            object-position: -10px 0px;
+            /* border: 2px solid black; */
+          }
+        }
+        .speakers-profile-pic-jaewon {
+          min-width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          overflow: hidden;
+          /* border: 2px solid black; */
+          /* display: flex; */
+          /* align-items: center; */
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-position: 0px 0px;
+            /* border: 2px solid black; */
           }
         }
         .speakers-profile-number {
@@ -182,12 +221,14 @@ main {
         }
         .introduction {
           margin-top: 12px;
-          margin-left: 40px;
+          /* margin-left: 20px; */
           color: rgb(85, 85, 85);
+          /* border: 2px solid black; */
         }
         p {
-          font-size: 18px;
-          color: rgb(70, 70, 70);
+          font-size: 16px;
+          color: rgb(84, 84, 84);
+          margin-top: 10px;
         }
       }
     }

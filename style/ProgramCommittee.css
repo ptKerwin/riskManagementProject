@@ -102,7 +102,7 @@ main {
     width: 68%;
     h1 {
       margin-bottom: 24px;
-      color: rgb(87, 87, 87);
+      color: rgb(56, 56, 56);
       /* border: 2px solid lightskyblue; */
     }
     .div1-members {
@@ -146,7 +146,7 @@ main {
     /* border: 2px solid black; */
     width: 68%;
     h1 {
-      color: rgb(87, 87, 87);
+      color: rgb(56, 56, 56);
       margin-bottom: 10px;
     }
     .div2-members {
@@ -188,7 +188,7 @@ main {
     /* border: 2px solid black; */
     width: 68%;
     h1 {
-      color: rgb(87, 87, 87);
+      color: rgb(56, 56, 56);
       margin-bottom: 10px;
     }
     .div3-members {
@@ -251,7 +251,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(233, 243, 255);
+  background-color: rgba(151, 172, 198, 0.35);
   .div4-block {
     width: 66%;
     margin-bottom: 70px;
@@ -279,7 +279,7 @@ main {
         background-color: rgb(255, 255, 255);
         box-shadow: 3px 2px 4px 1px rgba(72, 102, 137, 0.3);
         border-radius: 2px;
-        padding: 30px 30px;
+        padding: 26px 30px;
         transition: 0.3s;
         cursor: pointer;
         margin: 8px 0;
@@ -365,7 +365,7 @@ main {
       background-color: rgb(252, 253, 255);
       box-shadow: 3px 2px 4px 2.5px rgba(192, 192, 192, 0.637);
       border-radius: 2px;
-      padding: 30px 30px;
+      padding: 26px 30px;
       transition: 0.3s;
       cursor: pointer;
       margin: 20px 0;
