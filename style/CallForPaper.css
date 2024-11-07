@@ -423,6 +423,8 @@ main {
           }
           .speakers-profile-pic-jaewon {
             min-width: 150px;
+            width: 150px;
+
             height: 150px;
             border-radius: 50%;
             overflow: hidden;

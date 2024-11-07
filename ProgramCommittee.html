@@ -45,7 +45,7 @@
           <li class="others-li">
             <a>Others</a>
             <!-- &#x25BE -->
-            <ul class="others-dropdown">
+            <ul class="others-dropdown" id="others-dropdown">
               <li><a href="./Accommodation.html">Accommodation</a></li>
               <li><a href="./CityTour.html">City Tour</a></li>
               <li>
@@ -153,10 +153,12 @@
                   <div class="speakers-profile-number">1</div>
                   <h3>Jia-Chi Huang</h3>
                 </div>
-                <li class="introduction">
-                  Dean of the College of Commerce at National Chengchi
-                  University
-                </li>
+                <ul>
+                  <li class="introduction">
+                    Dean of the College of Commerce at National Chengchi
+                    University
+                  </li>
+                </ul>
               </div>
               <div
                 class="speakers-profile"
@@ -168,8 +170,12 @@
                 </div>
 
                 <div class="introduction">
-                  <li>President of Asian Finance Association</li>
-                  <li>Professor of Finance at National Chengchi University</li>
+                  <ul>
+                    <li>President of Asian Finance Association</li>
+                    <li>
+                      Professor of Finance at National Chengchi University
+                    </li>
+                  </ul>
                 </div>
               </div>
               <div
@@ -182,11 +188,13 @@
                 </div>
 
                 <div class="introduction">
-                  <li>Vice President of Asian Finance Association</li>
-                  <li>
-                    Associate Professor in Finance at Nanyang Technological
-                    University
-                  </li>
+                  <ul>
+                    <li>Vice President of Asian Finance Association</li>
+                    <li>
+                      Associate Professor in Finance at Nanyang Technological
+                      University
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -221,11 +229,13 @@
               </div>
 
               <div class="introduction">
-                <li>Co-chair of the program committee</li>
-                <li>
-                  Secretary of Asian Finance Association and Associate Professor
-                  at Ajou University
-                </li>
+                <ul>
+                  <li>Co-chair of the program committee</li>
+                  <li>
+                    Secretary of Asian Finance Association and Associate
+                    Professor at Ajou University
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -333,6 +343,30 @@
       navbar.style.boxShadow = "0px 1px 3px #00000088";
     }
   }
+
+  const othersLi = document.querySelector(".others-li");
+  const othersDropdown = document.getElementById("others-dropdown");
+  let screenWidth = window.screen.width;
+  othersLi.addEventListener("click", () => {
+    screenWidth = window.screen.width;
+    console.log(screenWidth);
+    if (screenWidth <= 1280) {
+      alert("123");
+      othersDropdown.style.display = "flex";
+    } else {
+      othersDropdown.style.display = "none";
+    }
+  });
+  othersLi.addEventListener("click", () => {
+    screenWidth = window.screen.width;
+    console.log(screenWidth);
+    if (screenWidth <= 1280) {
+      alert("123");
+      othersDropdown.style.display = "flex";
+    } else {
+      othersDropdown.style.display = "none";
+    }
+  });
 
   // 監聽滾動事件
   window.onscroll = function () {

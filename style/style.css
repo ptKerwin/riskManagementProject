@@ -130,6 +130,9 @@ header nav ul li:hover .others-dropdown {
     width: 30px;
     vertical-align: middle;
   }
+  .fa-bars {
+    color: white;
+  }
   .fa-bars:hover {
     cursor: pointer;
   }
@@ -226,6 +229,7 @@ footer section {
 
 .copyRight h4 {
   font-weight: 300;
+  /* font-size: 12px; */
 }
 
 footer section a {
@@ -336,7 +340,61 @@ html {
     }
   }
   .page-is-here {
-    /* color: black !important; */
-    background-color: antiquewhite;
+    color: black !important;
+    background-color: rgb(255, 235, 210);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fa-bars {
+    color: white;
+    /* border: 2px solid black; */
+    right: -26px;
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  footer section {
+    background-color: blanchedalmond;
+    height: 100%;
+    padding: 36px 60px;
+    text-align: center;
+  }
+
+  header nav ul li {
+    font-weight: 600;
+    margin-left: 0px;
+    /* border: 2px solid black; */
+    /* height: 80%; */
+  }
+
+  .others-li.others-dropdown-open .others-dropdown {
+    display: flex;
+    background-color: black;
+  }
+
+  .others-dropdown.show {
+    display: flex;
+  }
+
+  .others-dropdown {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid black; */
+    right: 0px;
+    top: 320px;
+    position: absolute;
+    z-index: 980;
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+    transition: 0.2s ease-in-out;
+  }
+
+  .copyRight h4 {
+    font-weight: 300;
+    font-size: 12px;
   }
 }
