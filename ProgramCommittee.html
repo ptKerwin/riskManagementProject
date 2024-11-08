@@ -347,24 +347,29 @@
   const othersLi = document.querySelector(".others-li");
   const othersDropdown = document.getElementById("others-dropdown");
   let screenWidth = window.screen.width;
-  othersLi.addEventListener("click", () => {
+
+  othersLi.addEventListener("click", function () {
     screenWidth = window.screen.width;
     console.log(screenWidth);
-    if (screenWidth <= 1280) {
-      alert("123");
-      othersDropdown.style.display = "flex";
-    } else {
-      othersDropdown.style.display = "none";
+    othersLi.classList.toggle("active");
+    // if (screenWidth <= 1280) {
+    //   alert("123");
+    //   othersDropdown.style.display = "flex";
+    // } else {
+    //   othersDropdown.style.display = "none";
+    // }
+  });
+  // 點擊document其他地方時關閉下拉選單
+  document.addEventListener("click", function (e) {
+    if (!othersLi.contains(e.target)) {
+      othersLi.classList.remove("active");
     }
   });
-  othersLi.addEventListener("click", () => {
-    screenWidth = window.screen.width;
-    console.log(screenWidth);
-    if (screenWidth <= 1280) {
-      alert("123");
-      othersDropdown.style.display = "flex";
-    } else {
-      othersDropdown.style.display = "none";
+
+  // 監聽螢幕寬度變化
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 480) {
+      othersLi.classList.remove("active");
     }
   });
 
