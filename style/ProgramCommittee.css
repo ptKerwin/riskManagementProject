@@ -6,7 +6,8 @@
 }
 
 h1 {
-  font-family: "Noto Serif";
+  /* font-family: "Noto Serif"; */
+  font-weight: 600;
   font-size: 30px;
   margin-bottom: 20px;
 }
