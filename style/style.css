@@ -204,6 +204,85 @@ input:checked ~ .menu {
 
 /* nav結束 */
 
+.slider-frame {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes slide_animation {
+  0% {
+    left: 200%;
+  }
+  10% {
+    left: 200%;
+  }
+  20% {
+    left: 200%;
+  }
+  30% {
+    left: 200%;
+  }
+  40% {
+    left: 200%;
+  }
+  50% {
+    left: 200%;
+  }
+  60% {
+    left: 100%;
+  }
+  70% {
+    left: 100%;
+  }
+  80% {
+    left: 100%;
+  }
+  90% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.slider-images {
+  width: 200%;
+  height: auto;
+  margin: 0 0 0 -200%;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+.image-container {
+  height: auto;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+
+.NCCU_image {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  top: -400px;
+  object-fit: cover;
+}
+
+.Taipei-image {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  top: -150px;
+  transform: scale(1);
+  /* left: 500px; */
+  object-fit: cover;
+}
+
 /* footer開始 */
 footer {
   height: 120px;
