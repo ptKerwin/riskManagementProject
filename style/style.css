@@ -232,6 +232,41 @@ input:checked ~ .menu {
     rgba(0, 0, 34, 0.795),
     rgba(255, 255, 255, 0.318)
   );
+
+  .source {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    color: rgb(23, 23, 23);
+    font-weight: 800;
+  }
+}
+
+.icons {
+  /* border: 2px solid black; */
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: white;
+  padding: 0px;
+  padding-left: 10px;
+  z-index: 200;
+  border-radius: 2px;
+  .asianfa_icon {
+    position: relative;
+    bottom: 8px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 100;
+    aspect-ratio: 18 / 7;
+    opacity: 0.85;
+  }
+  .NCCU_icon {
+    height: 80px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+  }
 }
 
 .title {
@@ -533,6 +568,7 @@ html {
     display: none;
     /* display: flex; */
     flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 1);
   }
 
   .copyRight h4 {
@@ -567,6 +603,15 @@ html {
       rgba(0, 0, 34, 0.795),
       rgba(255, 255, 255, 0.318)
     );
+
+    .source {
+      position: absolute;
+      right: 2px;
+      bottom: 2px;
+      color: rgb(23, 23, 23);
+      font-weight: 800;
+      font-size: 10px;
+    }
   }
 
   .title {
@@ -589,6 +634,37 @@ html {
     }
     h5 {
       font-size: 14px;
+    }
+  }
+
+  .icons {
+    /* border: 2px solid black; */
+    width: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    padding: 0px;
+    padding-left: 10px;
+    z-index: 200;
+    border-radius: 2px;
+    display: none;
+    align-items: center;
+
+    .NCCU_icon {
+      height: 40px;
+      aspect-ratio: 1 / 1;
+      cursor: pointer;
+    }
+    .asianfa_icon {
+      position: relative;
+      bottom: 0px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 100;
+      aspect-ratio: 18 / 7;
+      opacity: 0.85;
+      /* border: 2px solid black; */
     }
   }
 
