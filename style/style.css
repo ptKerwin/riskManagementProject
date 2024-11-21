@@ -456,6 +456,16 @@ html {
   .Taipei-image {
     top: -30%;
   }
+
+  .icons {
+    .asianfa_icon {
+      bottom: 8px;
+      height: 45px;
+    }
+    .NCCU_icon {
+      height: 60px;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .NCCU_image {
