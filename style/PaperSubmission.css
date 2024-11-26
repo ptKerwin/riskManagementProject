@@ -15,7 +15,7 @@ main {
 }
 
 .sec2 {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ main {
 .div1 {
   width: 100%;
   height: auto;
-  margin: 60px 0;
+  margin: 44px 0;
   position: relative;
   .div1-block {
     margin: 0 8%;
