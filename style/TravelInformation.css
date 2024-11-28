@@ -55,5 +55,17 @@ main {
       margin-bottom: 20px;
       text-align: justify;
     }
+    .warning {
+      font-weight: 700;
+    }
+    .opt {
+      margin-top: 60px;
+    }
+    .opt1 {
+    }
+    .opt2 {
+    }
+    .opt3 {
+    }
   }
 }
