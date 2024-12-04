@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* body開頭 */
+main {
+  /* padding: 0 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* margin: 40px; */
+  /* border: 2px solid black; */
+}
+
+.sec2 {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  /* border: 2px solid black; */
+}
+
+.sec2 div h1 {
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+}
+
+.div1 {
+  /* padding: 0 220px; */
+  width: 100%;
+  margin: 44px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .div1-block {
+    /* border: 2px solid black; */
+    width: 80%;
+    max-width: 900px;
+    h1 {
+      font-weight: 500;
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+    .warning {
+      font-weight: 700;
+    }
+    .opt {
+      margin-top: 60px;
+    }
+    .opt1 {
+    }
+    .opt2 {
+    }
+    .opt3 {
+    }
+  }
+}

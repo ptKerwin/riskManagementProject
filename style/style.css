@@ -99,6 +99,10 @@ header nav ul li:hover .others-dropdown {
   padding: 10px 0;
 }
 
+.travel-dropdown {
+  right: 64px;
+}
+
 .page-is-here {
   color: rgb(235, 178, 66) !important;
 }
