@@ -381,14 +381,19 @@ footer section {
   background-color: blanchedalmond;
   height: 100%;
   padding: 36px 50px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.cantact {
-}
-
-.contact h4 {
-  font-weight: 500;
+.contact {
+  h4 {
+    font-weight: 500;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .copyRight {
@@ -398,12 +403,15 @@ footer section {
 .copyRight h4 {
   font-weight: 300;
   /* font-size: 12px; */
+  text-align: center;
 }
 
-footer section a {
-  text-decoration: none;
-  color: black;
+.sponsor {
+  img {
+    width: 60px;
+  }
 }
+
 /* footer結束 */
 
 /* 滑到頂端按鈕設定 */
