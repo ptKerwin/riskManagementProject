@@ -82,7 +82,7 @@ header nav ul li:hover .others-dropdown {
 
 .others-dropdown li a {
   color: black !important;
-  padding: 10px 10px;
+  padding: 10px 0px;
   /* background-color: aqua; */
   /* border: 2px solid black; */
 }
@@ -102,7 +102,7 @@ header nav ul li:hover .others-dropdown {
 }
 
 .travel-dropdown {
-  right: 28px;
+  right: 42px;
 }
 
 .page-is-here {
