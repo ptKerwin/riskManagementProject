@@ -324,7 +324,7 @@ main {
       padding: 26px 30px;
       transition: 0.3s;
       cursor: pointer;
-      margin: 20px 0;
+      margin: 8px 0;
       &:hover {
         box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
       }

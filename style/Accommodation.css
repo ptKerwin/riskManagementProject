@@ -55,5 +55,8 @@ main {
       margin-bottom: 20px;
       text-align: justify;
     }
+    a {
+      color: rgb(0, 0, 184);
+    }
   }
 }

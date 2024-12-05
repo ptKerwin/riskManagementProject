@@ -14,23 +14,12 @@ main {
   /* margin: 40px; */
 }
 
-.sec1 {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sec1 img {
-  width: 100%;
-}
-
 .sec2 {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 60vh;
 }
 
 .sec2 div {
@@ -42,6 +31,7 @@ main {
 }
 
 .sec2 div h1 {
+  margin-top: 46%;
   font-weight: 400;
   font-size: 40px;
   text-align: center;

@@ -54,6 +54,9 @@ main {
       line-height: 28px;
       margin-bottom: 20px;
       text-align: justify;
+      a {
+        color: rgb(0, 0, 184);
+      }
     }
     .warning {
       font-weight: 700;

@@ -43,7 +43,8 @@ header nav ul {
 
 header nav ul li {
   font-weight: 600;
-  margin-left: 14px;
+  /* margin-left: 14px; */
+  /* padding: 0 10px; */
   /* border: 2px solid black; */
   /* height: 80%; */
 }
@@ -53,6 +54,7 @@ header nav ul li a {
   color: black;
   transition: 0.2s ease-in;
   padding: 26px 0;
+  margin: 0px;
   /* border: 2px solid black; */
 }
 
@@ -464,6 +466,13 @@ html {
 .fa-arrow-up:hover {
   transform: translateY(2.5px);
   cursor: pointer;
+}
+
+/* 專門為navbar格式的RWD */
+@media screen and (max-width: 1310px) {
+  header nav ul li {
+    padding: 0 14px;
+  }
 }
 
 /* 768px 以上的螢幕寬樣式 */
