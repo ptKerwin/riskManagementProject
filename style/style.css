@@ -560,6 +560,18 @@ html {
     text-align: center;
   }
 
+  .sponsor {
+    /* border: 2px solid black;  */
+    height: 60px;
+    display: flex;
+    width: fit-content;
+    img {
+      width: 10px;
+      height: 100%;
+      margin: 0 10px;
+    }
+  }
+
   header {
     position: static;
   }

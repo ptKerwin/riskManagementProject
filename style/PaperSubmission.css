@@ -132,6 +132,10 @@ main {
 }
 
 @media screen and (max-width: 480px) {
+  .sec2 {
+    margin-bottom: 20px;
+  }
+
   .div1 {
     width: 100%;
     height: auto;
@@ -144,7 +148,7 @@ main {
         width: 100%;
         border: 1px solid rgb(218, 218, 218);
         padding: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
         background-color: rgb(244, 249, 255);
         border-radius: 4px;
         display: flex;
@@ -157,24 +161,31 @@ main {
           }
         }
       }
-      .sub-period {
-        margin-top: 10px;
+      .sub-notification {
         width: 100%;
-        /* left: 1%; */
-        /* height: 90px; */
         /* border: 2px solid black; */
-        position: relative;
-        align-items: center;
         display: flex;
-        h5 {
+        flex-direction: column;
+        .sub-period {
+          margin-top: 10px;
+          width: 100%;
+          /* left: 1%; */
+          /* height: 90px; */
           /* border: 2px solid black; */
-          font-size: 16px;
-          margin-right: 10px;
-        }
-        p {
-          /* border: 2px solid black; */
-          font-size: 16px;
-          font-weight: 700;
+          position: relative;
+          align-items: center;
+          display: flex;
+          h5 {
+            /* border: 2px solid black; */
+            font-size: 16px;
+            margin-right: 10px;
+          }
+          p {
+            margin-top: 10px;
+            /* border: 2px solid black; */
+            font-size: 16px;
+            /* font-weight: 700; */
+          }
         }
       }
       .sub-notify {
@@ -197,12 +208,30 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        .guide-button {
+          /* position: absolute; */
+          /* right: 0px; */
+          justify-content: center;
+          height: 44px;
+          width: 100%;
+          padding: 4px 20px;
+          background-color: rgb(87, 140, 181);
+          border-radius: 4px;
+          color: white;
+          font-weight: 600;
+          font-size: 14px;
+          border: 2px solid rgb(87, 140, 181);
+          margin-bottom: 6px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
         .submit-button {
           /* position: absolute; */
           /* right: 0px; */
           height: 44px;
           width: 100%;
-          padding: 0 20px;
+          padding: 4px 20px;
           background-color: rgb(87, 140, 181);
           border-radius: 4px;
           color: white;
