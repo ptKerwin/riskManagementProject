@@ -206,11 +206,16 @@ main {
       margin-bottom: 6px;
       color: rgb(40, 40, 40);
     }
+
     .alphabetical-order {
       font-size: 20px;
       color: rgb(118, 118, 118);
       text-align: center;
       margin-bottom: 20px;
+    }
+    .position-title {
+      font-size: 24px;
+      font-weight: 500;
     }
     .speakers {
       display: flex;
@@ -346,81 +351,159 @@ main {
 
 .div5 {
   width: 100%;
-  /* border: 2px solid black; */
-  h1 {
-    text-align: center;
-    color: rgb(40, 40, 40);
-    font-size: 34px;
-    margin-bottom: 6px;
-  }
-  .alphabetical-order {
-    font-size: 20px;
-    color: rgb(118, 118, 118);
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  .speakers {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%;
-
-    .speakers-profile {
-      /* border: 2px solid black; */
-      width: 66%;
-      max-width: 1200px;
+  /* margin: 100px 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .div5-block {
+    width: 66%;
+    max-width: 1200px;
+    margin-bottom: 70px;
+    /* border: 2px solid black; */
+    h1 {
+      text-align: center;
+      color: rgb(40, 40, 40);
+      font-size: 34px;
+      margin-bottom: 6px;
+    }
+    .alphabetical-order {
+      font-size: 20px;
+      color: rgb(118, 118, 118);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .position-title {
+      font-size: 24px;
+      font-weight: 500;
+    }
+    p {
+      left: 10%;
+    }
+    .speakers {
       display: flex;
       flex-direction: column;
-      /* align-items: center; */
-      background-color: rgb(252, 253, 255);
-      box-shadow: 3px 2px 4px 2.5px rgba(192, 192, 192, 0.637);
-      border-radius: 2px;
-      padding: 26px 30px;
-      transition: 0.3s;
-      cursor: pointer;
-      margin: 8px 0;
-      &:hover {
-        box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
-      }
-      .speakers-profile-name {
-        position: relative;
-        width: 100%;
+      /* justify-content: space-around; */
+      align-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+
+      .speakers-profile {
         /* border: 2px solid black; */
+        width: 100%;
+        max-width: 1200px;
         display: flex;
-        align-items: center;
-        .speakers-profile-number {
-          /* border: 2px solid rgb(110, 192, 231); */
-          background-color: rgb(190, 208, 222);
-          border-radius: 50% 50%;
-
-          /* text-decoration: underline rgb(59, 110, 177); */
-          text-underline-offset: 6px;
-          color: rgb(255, 255, 255);
-          height: 14px;
-          width: 14px;
-          margin-bottom: 10px;
-          text-align: center;
-          line-height: 24px;
-          font-size: 18px;
-          font-weight: 500;
-          margin-right: 10px;
+        flex-direction: column;
+        /* align-items: center; */
+        background-color: rgb(252, 253, 255);
+        box-shadow: 3px 2px 4px 2.5px rgba(192, 192, 192, 0.637);
+        border-radius: 2px;
+        padding: 26px 30px;
+        transition: 0.3s;
+        cursor: pointer;
+        margin: 8px 0;
+        &:hover {
+          box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
         }
+        .speakers-profile-name {
+          position: relative;
+          width: 100%;
+          /* border: 2px solid black; */
+          display: flex;
+          align-items: center;
+          .speakers-profile-number {
+            /* border: 2px solid rgb(110, 192, 231); */
+            background-color: rgb(190, 208, 222);
+            border-radius: 50% 50%;
 
-        h3 {
-          font-size: 20px;
-          font-weight: 500;
-          margin-bottom: 12px;
-          color: rgb(63, 63, 63);
+            /* text-decoration: underline rgb(59, 110, 177); */
+            text-underline-offset: 6px;
+            color: rgb(255, 255, 255);
+            height: 14px;
+            width: 14px;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 24px;
+            font-size: 18px;
+            font-weight: 500;
+            margin-right: 10px;
+          }
+
+          h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: rgb(63, 63, 63);
+          }
+        }
+        .introduction {
+          margin-left: 40px;
+          li {
+            font-size: 16px;
+            color: rgb(85, 85, 85);
+            margin-top: 6px;
+          }
         }
       }
-      .introduction {
-        margin-left: 40px;
-        li {
-          font-size: 16px;
-          color: rgb(85, 85, 85);
-          margin-top: 6px;
+    }
+    .speakers-sub {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: space-around; */
+      align-items: center;
+      /* border: 2px solid black; */
+      margin-bottom: 20px;
+      width: 100%;
+      .speakers-two-columns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .speakers-profile {
+          /* border: 2px solid black; */
+          width: 46%;
+          /* max-width: 1200px; */
+
+          display: flex;
+          /* flex-direction: column; */
+          align-items: center;
+          justify-content: center;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 3px 2px 4px 2.5px rgba(192, 192, 192, 0.637);
+          border-radius: 2px;
+          padding: 28px;
+          margin: 10px 0;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
+          }
+
+          .speakers-profile-number {
+            /* border: 2px solid rgb(110, 192, 231); */
+            background-color: rgb(190, 208, 222);
+            border-radius: 50% 50%;
+
+            /* text-decoration: underline rgb(59, 110, 177); */
+            text-underline-offset: 6px;
+            color: rgb(255, 255, 255);
+            height: 14px;
+            width: 14px;
+            margin-right: 10px;
+            text-align: center;
+            /* line-height: 50px; */
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          h3 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-right: 12px;
+          }
+          p {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.555);
+          }
         }
       }
     }
