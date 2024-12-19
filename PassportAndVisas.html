@@ -41,7 +41,7 @@
           <li>
             <a href="./ConferenceProgram.html">Conference Program</a>
           </li>
-          <li class="others-li">
+          <li class="others-travel-li page-is-here">
             <a class="page-is-here">Travel Information</a>
             <!-- &#x25BE -->
             <ul class="others-dropdown travel-dropdown" id="others-dropdown">
@@ -212,12 +212,17 @@
   }
 
   const othersLi = document.querySelector(".others-li");
-  const othersDropdown = document.getElementById("others-dropdown");
+  const othersTravelLi = document.querySelector(".others-travel-li");
 
   othersLi.addEventListener("click", function () {
     screenWidth = window.screen.width;
     othersLi.classList.toggle("active");
   });
+
+  othersTravelLi.addEventListener("click", function () {
+    othersTravelLi.classList.toggle("active");
+  });
+
   // 點擊document其他地方時關閉下拉選單
   document.addEventListener("click", function (e) {
     if (!othersLi.contains(e.target)) {

@@ -624,6 +624,10 @@ html {
     top: 326px;
   }
 
+  .page-is-here-drop {
+    background-color: rgb(255, 235, 210);
+  }
+
   .copyRight h4 {
     font-weight: 300;
     font-size: 12px;
