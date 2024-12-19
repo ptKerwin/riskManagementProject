@@ -593,6 +593,12 @@ html {
     max-height: 500px;
   }
 
+  .others-travel-li.active .others-dropdown {
+    display: flex;
+    /* transition: all 0.3s ease-out; */
+    max-height: 500px;
+  }
+
   .others-dropdown {
     max-height: 0px;
     padding: 0px;
@@ -604,13 +610,18 @@ html {
     background-color: rgb(255, 255, 255);
     /* border: 2px solid black; */
     right: 0px;
-    top: 326px;
+    top: 372px;
     position: absolute;
     z-index: 980;
     display: none;
     /* display: flex; */
     flex-direction: column;
     border: 1px solid rgba(0, 0, 0, 1);
+  }
+
+  .travel-dropdown {
+    right: 0px;
+    top: 326px;
   }
 
   .copyRight h4 {
