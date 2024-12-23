@@ -82,7 +82,7 @@ main {
       .speakers-profile {
         /* border: 2px solid black; */
         width: 44%;
-        max-width: 600px;
+        max-width: 450px;
         display: flex;
         text-align: center;
         flex-direction: column;
