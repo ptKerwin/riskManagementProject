@@ -475,8 +475,8 @@ html {
   }
 }
 
-/* 768px 以上的螢幕寬樣式 */
-@media screen and (min-width: 768px) {
+/* 768px 以上的螢幕寬樣式 、 在視窗太窄的時候把navbar改成下拉選單 */
+@media screen and (min-width: 1080px) {
   label {
     display: none;
   }
