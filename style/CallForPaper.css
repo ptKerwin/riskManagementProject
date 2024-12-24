@@ -81,8 +81,8 @@ main {
       width: 100%;
       .speakers-profile {
         /* border: 2px solid black; */
+        max-width: 600px;
         width: 44%;
-        max-width: 450px;
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -130,6 +130,7 @@ main {
         }
         .speakers-profile-pic-jaewon {
           min-width: 150px;
+          aspect-ratio: 1 / 1;
           height: 150px;
           border-radius: 50%;
           overflow: hidden;
@@ -421,6 +422,8 @@ main {
         .speakers-profile {
           /* border: 2px solid black; */
           width: 100%;
+          max-width: 450px;
+
           display: flex;
           text-align: center;
           flex-direction: column;
