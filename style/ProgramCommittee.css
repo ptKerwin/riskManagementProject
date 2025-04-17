@@ -291,13 +291,179 @@ main {
         }
       }
     }
+    /* 下拉選單 */
+    .downdrop {
+      width: 100%;
+      padding: 2px;
+    }
+
+    .droplabel {
+      height: auto;
+      width: 100%;
+      display: flex;
+      margin: 8px 0;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .downdrop-element {
+      border-radius: 2px;
+      height: 70px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 20px;
+      background-color: rgb(56, 114, 158);
+      color: #fff;
+      &:hover {
+        border: 1.5px solid rgb(56, 114, 158);
+      }
+      &:hover .fa-circle-chevron-down {
+        color: antiquewhite;
+      }
+      &:hover .fa-calendar-days {
+        color: rgb(248, 229, 204);
+      }
+    }
+
+    .fa-note-sticky {
+      /* color: rgb(248, 218, 129); */
+    }
+
+    .fa-calendar-days {
+      /* color: white; */
+    }
+
+    .agenda-date {
+      position: relative;
+      left: 15px;
+    }
+
+    .display {
+      position: absolute;
+      right: 56px;
+      /* top: 22px; */
+    }
+
+    .fa-circle-chevron-down {
+      position: absolute;
+      right: 20px;
+    }
+
+    .downdrop-element label {
+      position: relative;
+      border: 2px solid black;
+      width: 100px;
+      color: black;
+      z-index: 100;
+    }
+
+    .downdrop-content {
+      width: 100%;
+      height: auto;
+      clear: both;
+      /* background: #fff; */
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.4s ease-in;
+      background-color: rgb(250, 253, 255);
+      .speakers-sub {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+        /* border: 2px solid black; */
+        /* margin-bottom: 20px; */
+        width: 100%;
+
+        .speakers-profile {
+          /* border: 2px solid black; */
+          width: 100%;
+          max-width: 1200px;
+
+          display: flex;
+          /* flex-direction: column; */
+          align-items: center;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 3px 2px 4px 2.5px rgba(192, 192, 192, 0.637);
+          border-radius: 2px;
+          padding: 28px;
+          margin: 10px 0;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
+          }
+
+          .speakers-profile-number {
+            /* border: 2px solid rgb(110, 192, 231); */
+            background-color: rgb(190, 208, 222);
+            border-radius: 50% 50%;
+
+            /* text-decoration: underline rgb(59, 110, 177); */
+            text-underline-offset: 6px;
+            color: rgb(255, 255, 255);
+            height: 14px;
+            width: 14px;
+            min-height: 14px;
+            min-width: 14px;
+            margin-right: 10px;
+            text-align: center;
+            /* line-height: 50px; */
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          h3 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-right: 12px;
+            /* border: 2px solid black; */
+            max-width: 30%;
+            min-width: 30%;
+          }
+          p {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.555);
+            /* max-width: 60%; */
+            width: 60%;
+            /* border: 2px solid black; */
+          }
+        }
+      }
+    }
+
+    input {
+      display: none;
+    }
+
+    input:checked ~ .downdrop-content {
+      max-height: 5000px;
+      /* padding: 20px; */
+      transition-duration: 0.6s;
+      /* border: 1.5px solid rgb(56, 114, 158); */
+      border-top: none;
+    }
+
+    input:checked + .downdrop-element .fa-circle-chevron-down {
+      color: antiquewhite;
+    }
+    input:checked + .downdrop-element .fa-calendar-days {
+      color: rgb(248, 229, 204);
+    }
     .speakers-sub {
       display: flex;
       flex-direction: column;
       /* justify-content: space-around; */
       align-items: center;
       /* border: 2px solid black; */
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
       width: 100%;
 
       .speakers-profile {
@@ -352,6 +518,80 @@ main {
           /* max-width: 60%; */
           width: 60%;
           /* border: 2px solid black; */
+        }
+      }
+    }
+    .downdrop-content {
+      width: 100%;
+      height: auto;
+      clear: both;
+      /* background: #fff; */
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.4s ease-in;
+      background-color: rgb(250, 253, 255);
+      .speakers-sub {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+        /* border: 2px solid black; */
+        /* margin-bottom: 20px; */
+        width: 100%;
+
+        .speakers-profile {
+          /* border: 2px solid black; */
+          width: 100%;
+          max-width: 1200px;
+
+          display: flex;
+          /* flex-direction: column; */
+          align-items: center;
+          background-color: rgb(255, 255, 255);
+          box-shadow: 1px rgba(225, 225, 225, 0.637);
+          border-radius: 2px;
+          padding: 28px;
+          margin: 1px 0;
+          transition: 0.3s;
+          cursor: pointer;
+          &:hover {
+            box-shadow: 2px 4px 4px 2px rgba(72, 102, 137, 0.3);
+          }
+
+          .speakers-profile-number {
+            /* border: 2px solid rgb(110, 192, 231); */
+            background-color: rgb(190, 208, 222);
+            border-radius: 50% 50%;
+
+            /* text-decoration: underline rgb(59, 110, 177); */
+            text-underline-offset: 6px;
+            color: rgb(255, 255, 255);
+            height: 14px;
+            width: 14px;
+            min-height: 14px;
+            min-width: 14px;
+            margin-right: 10px;
+            text-align: center;
+            /* line-height: 50px; */
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          h3 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-right: 12px;
+            /* border: 2px solid black; */
+            max-width: 30%;
+            min-width: 30%;
+          }
+          p {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.555);
+            /* max-width: 60%; */
+            width: 60%;
+            /* border: 2px solid black; */
+          }
         }
       }
     }
