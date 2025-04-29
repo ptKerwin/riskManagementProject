@@ -169,7 +169,7 @@ input:checked ~ .menu {
     a {
       display: block;
       font-size: 18px;
-      color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
       /* border: 2px solid black; */
       &:hover {
         /* color: rgb(105, 98, 235); */
@@ -510,13 +510,48 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
   .icon {
     display: none;
+  }
+  .others-li.active .others-dropdown {
+    display: flex;
+    /* transition: all 0.3s ease-out; */
+    max-height: 500px;
+  }
+  .others-travel-li.active .others-dropdown {
+    display: flex;
+    /* transition: all 0.3s ease-out; */
+    max-height: 500px;
   }
   .others-dropdown {
     display: none;
   }
+
+  .others-dropdown {
+    max-height: 0px;
+    padding: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    width: 100%;
+    /* height: auto; */
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid black; */
+    right: 0px;
+    top: 362px;
+    position: absolute;
+    z-index: 980;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    border: 1px solid rgb(151, 151, 151);
+  }
+
+  .travel-dropdown {
+    right: 0px;
+    top: 316px;
+  }
+
   header nav ul li:hover .others-dropdown {
     display: none;
   }
@@ -535,6 +570,9 @@ html {
         color: black;
       }
     }
+  }
+  .others-dropdown li a {
+    padding: 8px;
   }
   .page-is-here {
     color: black !important;

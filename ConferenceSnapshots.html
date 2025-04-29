@@ -212,6 +212,13 @@
     }
   });
 
+  // 點擊document其他地方時關閉travel information的下拉選單
+  document.addEventListener("click", function (e) {
+    if (!othersTravelLi.contains(e.target)) {
+      othersTravelLi.classList.remove("active");
+    }
+  });
+
   // 監聽螢幕寬度變化
   window.addEventListener("resize", function () {
     if (window.innerWidth > 480) {
