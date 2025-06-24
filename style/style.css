@@ -291,7 +291,7 @@ input:checked ~ .menu {
     font-size: 18px;
   }
   .venue {
-    color: red;
+    color: red !important;
     font-weight: 1200;
   }
 }
