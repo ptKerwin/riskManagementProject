@@ -290,6 +290,10 @@ input:checked ~ .menu {
   h5 {
     font-size: 18px;
   }
+  .venue {
+    color: red;
+    font-weight: 1200;
+  }
 }
 
 .slider-frame {
